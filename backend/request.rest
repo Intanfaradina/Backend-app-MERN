@@ -1,0 +1,35 @@
+### api untuk get semua data
+GET http://localhost:5000/users
+
+### api untuk get single data
+GET http://localhost:5000/users/62f89104997e6a82c724afe6
+
+### api untuk post data
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Faradina",
+    "nim" : "200101128",
+    "kelas" : "20C1",
+    "semester" : "4",
+    "jeniskelamin" : "perempuan",
+    "alamat" : "ds belotan"
+}
+
+### api untuk update data
+PATCH http://localhost:5000/users/update/62f89104997e6a82c724afe6
+Content-Type: application/json
+
+{
+    "name" : "Farhan",
+    "nim" : "200101128",
+    "kelas" : "20C1",
+    "semester" : "4",
+    "jeniskelamin" : "Laki Laki",
+    "alamat" : "ds belotan"
+}
+
+### api untuk delete data
+DELETE http://localhost:5000/users/delete/62f89104997e6a82c724afe6
+Content-Type: application/json
